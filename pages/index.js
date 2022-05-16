@@ -204,9 +204,7 @@ export default function Home() {
 
       <nav className="border-b-[1px] border-borderOpacity w-full flex items-center justify-center mb-2">
         <div className="w-10/12 flex items-center justify-between my-3">
-          <span
-            className="text-2xl font-medium flex items-center justify-center"
-          >
+          <span className="text-2xl font-medium flex items-center justify-center">
             <span className="relative top-[3px]">
               <Image src="/icons/solidity.svg" width={34} height={32}></Image>
             </span>
@@ -291,7 +289,7 @@ export default function Home() {
               <form className="w-full flex flex-col p-5 bg-bgOpacityStrong rounded-md 2xl:py-8">
                 <label className="text-lg 2xl:text-xl mb-0.5">Name</label>
                 <input
-                  className="w-full rounded-sm py-2 px-2 mb-2 2xl:mb-4 text-gray-700"
+                  className="w-full rounded-sm py-2 px-2 mb-2 2xl:mb-4 text-gray-700 outline-0"
                   id="name"
                   type="text"
                   placeholder="Satoshi Nakamoto"
@@ -299,7 +297,7 @@ export default function Home() {
                 />
                 <label className="text-lg 2xl:text-xl mb-0.5">Add a letter</label>
                 <textarea
-                  className="w-full h-[4rem] 2xl: rounded-sm py-1 px-2 mb-2 2xl:mb-8 text-gray-700 resize-none "
+                  className="w-full h-[4rem] 2xl: rounded-sm py-1 px-2 mb-2 2xl:mb-8 text-gray-700 resize-none outline-0"
                   rows={3}
                   placeholder="Here goes the caffeine to continue learning web3 dear dev!."
                   id="message"
@@ -362,11 +360,11 @@ export default function Home() {
                       <p>{new Date(memo.timestamp * 1000).toLocaleString().toString()}</p>
                     </span>
                     <p className="">
-                      "
+                      
                       {memo.mesage?.length > 200
-                        ? memo.message.slice(0, 200) + "..."
-                        : memo.message}
-                      "
+                        ? '"' +  memo.message.slice(0, 200) + "..." + ""
+                        : '"' + memo.message + '"'}
+                      
                     </p>
                   </div>
                 );
