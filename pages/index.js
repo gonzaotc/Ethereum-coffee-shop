@@ -53,10 +53,12 @@ export default function Home() {
   };
 
   useEffect(() => {
-    ethereum.on("accountsChanged", handleAccountChange);
-    return () => {
-      ethereum.removeListener("accountsChanged", handleAccountChange);
-    };
+    if (ethereum) {
+      ethereum.on("accountsChanged", handleAccountChange);
+      return () => {
+        ethereum.removeListener("accountsChanged", handleAccountChange);
+      };
+    }
   }, []);
 
   // Wallet re-connection logic
@@ -360,11 +362,9 @@ export default function Home() {
                       <p>{new Date(memo.timestamp * 1000).toLocaleString().toString()}</p>
                     </span>
                     <p className="">
-                      
                       {memo.mesage?.length > 200
-                        ? '"' +  memo.message.slice(0, 200) + "..." + ""
+                        ? '"' + memo.message.slice(0, 200) + "..." + ""
                         : '"' + memo.message + '"'}
-                      
                     </p>
                   </div>
                 );
