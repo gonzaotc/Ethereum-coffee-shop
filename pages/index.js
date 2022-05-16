@@ -53,7 +53,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    if (ethereum) {
+    if (window.ethereum) {
       ethereum.on("accountsChanged", handleAccountChange);
       return () => {
         ethereum.removeListener("accountsChanged", handleAccountChange);
