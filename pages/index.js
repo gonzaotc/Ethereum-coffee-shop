@@ -3,7 +3,7 @@ import { ethers } from "ethers";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import LogoutIcon from "../components/logoutIcon";
+import LogoutIcon from "../components/LogoutIcon";
 import Modal from "../components/Modal";
 import Spinner from "../components/Spinner";
 
