@@ -240,6 +240,9 @@ export default function Home() {
           )}
         </div>
       </nav>
+      <div className="w-full mb-2 border-b-[1px] border-white/25 flex items-center justify-center">
+        <p className="w-10/12 mb-3 mt-1 text-xl"><span className="text-cyan-300">Under development: </span>Be sure to connect with the Goerli ethereum test-net.</p>{" "}
+      </div>
 
       <main className="h-full w-full flex items-center justify-center">
         {openModal && (
@@ -375,18 +378,7 @@ export default function Home() {
       </main>
 
       <footer className="w-full h-20 bg-bgOpacity border-t-[1px] border-borderOpacity flex items-center justify-center">
-        <div className="w-10/12 h-full flex items-center justify-between ">
-          <span className="flex items-center justify-center text-[1.32rem]">
-            powered by
-            <a
-              href="https://alchemy.com/?a=roadtoweb3weektwo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-2 flex items-center justify-center"
-            >
-              <Image src="/icons/alchemy.png" width={124.8} height={26.4} layout="fixed"></Image>
-            </a>
-          </span>
+        <div className="w-10/12 h-full flex items-center justify-end">
           <a
             href="https://twitter.com/gonzaotc"
             target="_blank"
