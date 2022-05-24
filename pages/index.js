@@ -240,8 +240,11 @@ export default function Home() {
           )}
         </div>
       </nav>
-      <div className="w-full mb-2 border-b-[1px] border-white/25 flex items-center justify-center">
-        <p className="w-10/12 mb-3 mt-1 text-xl"><span className="text-cyan-300">Under development: </span>Be sure to connect with the Goerli ethereum test-net.</p>{" "}
+      <div className="w-full mb-1 border-b-[1px] border-white/25 flex items-center justify-center">
+        <p className="w-10/12 mb-2 text-xl">
+          <span className="text-cyan-300">Under development: </span>Be sure to connect with the
+          Goerli ethereum test-net.
+        </p>{" "}
       </div>
 
       <main className="h-full w-full flex items-center justify-center">
@@ -286,12 +289,12 @@ export default function Home() {
           </Modal>
         )}
 
-        <div className=" h-full w-10/12 grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center ">
+        <div className=" h-full w-10/12 grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center 2xl:mt-4">
           {/* COL1 */}
           <div className="w-11/12 max-w-[450px] 2xl:max-w-[700px] h-full border-green-300 flex flex-col items-center">
             <div className="w-full flex flex-col items-center justify-center">
-              <h3 className="text-3xl mb-2 2xl:mb-4">Send a coffee</h3>
-              <form className="w-full flex flex-col p-5 bg-bgOpacityStrong rounded-md 2xl:py-8">
+              <h3 className="text-2xl 2xl:text-3xl mb-2 2xl:mb-4">Send a coffee</h3>
+              <form className="w-full flex flex-col p-3 2xl:p-6 bg-bgOpacityStrong rounded-md 2xl:py-5">
                 <label className="text-lg 2xl:text-xl mb-0.5">Name</label>
                 <input
                   className="w-full rounded-sm py-2 px-2 mb-2 2xl:mb-4 text-gray-700 outline-0"
@@ -355,7 +358,7 @@ export default function Home() {
           </div>
           {/* COL 2 */}
           <div className="w-11/12 max-w-[700px] h-full  border-red-500 flex flex-col items-center">
-            <h3 className="text-3xl mb-2 2xl:mb-4">Coffees prepared</h3>
+            <h3 className="text-2xl 2xl:text-3xl mb-2 2xl:mb-4">Coffees prepared</h3>
             <div className="w-full h-full overflow-y-auto max-h-63vh 2xl:max-h-70vh no-scrollbar">
               {memos.map((memo, idx) => {
                 return (
