@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Next.js app to send caffees and messages through ethereum test-net
 
-## Getting Started
+To be able to use it, connect your wallet with MetaMask in the Goerli' ethereum testnet. <br/>
+ <br/>
+Try it by yourself: https://smart-coffe-shop-b52ewting-gonzaotc.vercel.app/ <br/>
+<br/>
+You can claim free goerli's ether to try it out in https://goerlifaucet.com/. 
 
-First, run the development server:
+ ![image](https://user-images.githubusercontent.com/86085168/170133540-191f8f59-aebc-4a8f-807f-2049f03a1f36.png)
+ 
+ <br/>
+ 
+ ## Tech stack used:
+ - Next.js + React.js for the interface logic.
+ - Ethers.js to handle interaction between the UI and the blockchain. In this case, writting and reading from the ethereum testnet.
+ - Hardhat as development environment.
+ - Solidity for the Smart Contract.
+ - TailwindCSS for faster UI styles development.
+ <br/>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Learning history
+- This was my first time using ethers.js, doing a wallet-sign-in, and one of my first smart contracts!.
+- I struggled learning how to interact with the blockchain, estimating gas prices and making sure everything goes well, but i had too much fun.
+- Seeing my own contract working was so motivating!, pushed me to learn more, as in the next projects I implemented multi-chain handling and sign-in, better UX for the transactions and more complex smart contracts. 
