@@ -21,5 +21,5 @@ You can claim free goerli's ether to try it out in https://goerlifaucet.com/.
 
 ## Learning history
 - This was my first time using ethers.js, doing a wallet-sign-in, and one of my first smart contracts!.
-- I struggled learning how to interact with the blockchain, estimating gas prices and making sure everything goes well, but i had too much fun.
-- Seeing my own contract working was so motivating!, pushed me to learn more, as in the next projects I implemented multi-chain handling and sign-in, better UX for the transactions and more complex smart contracts. 
+- I struggled a lot learning how to interact with the blockchain, estimating gas prices and making sure everything goes well, but in the end i had too much fun.
+- Seeing my own contract working was so motivating!, pushed me to go forward, as in the next projects I implemented multi-chain handling and sign-in, better UX for the transactions and more complex smart contracts. 
